@@ -42,7 +42,7 @@ OR
 
 If you want to altogether skip the data preparation steps and run only the benchmarking notebook, download the following zipped folder, extract files and save them to your input directory
 * File name: case_study_1_calculated_features
-* Link to download from: https://zenodo.org/uploads/21611057
+* Link to download from: https://doi.org/10.5281/zenodo.21611057
 
   Ensure to change the paths in the notebooks as needed.
   
