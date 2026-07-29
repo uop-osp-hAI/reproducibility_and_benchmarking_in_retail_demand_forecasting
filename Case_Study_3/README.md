@@ -36,5 +36,7 @@ non-smooth (ADI>=1.32)
 
 * **Prerequisites:** Kaggle Corporación Favorita files in 'DATA_DIR':
 train.csv, stores.csv, items.csv, holidays_events.csv, oil.csv, transactions.csv
+* File name: case_study_3_favorita-grocery-sales-forecasting (download and extract the zipped files and save them to your work environment)
+* Link to download from: https://zenodo.org/uploads/21611057
 
 * Required packages: lightgbm, statsforecast, pandas, numpy, scikit-learn
