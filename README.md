@@ -1,2 +1,2 @@
 # triplelooplearning
-This repo contains the python code notebooks and requirements.txt for the case study papers chosen for the benchmarking of models used.
+This repo contains the python code notebooks and instructions for running the benchmarking codes for Triple loop learning case studies
