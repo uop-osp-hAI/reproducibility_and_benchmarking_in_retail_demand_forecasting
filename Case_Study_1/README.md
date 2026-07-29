@@ -36,7 +36,13 @@ Run the paper's Articles 1–5  from the paper's repository (CodeOcean capsule 3
   5. Fifth notebook to run: Case_Study_1_data_prep_notebook5_Article_5_FeatureEngineering
      
   Our Statistical and ML benchmark:
-  7. Case_Study_1_Disaggregated_Retail_demand_forecasting_Gradient_Boosting_statistical_and_ML_benchmarks
+  6. Case_Study_1_Disaggregated_Retail_demand_forecasting_Gradient_Boosting_statistical_and_ML_benchmarks
+
+OR
+
+If you want to altogether skip the data preparation steps and run only the benchmarking notebook, download the following zipped folder, extract files and save them to your input directory
+* File name: case_study_1_calculated_features
+* Link to download from: https://zenodo.org/uploads/21611057
 
   Ensure to change the paths in the notebooks as needed.
   
