@@ -15,6 +15,13 @@ LightGBM and Statistical Benchmark models for Andrade & Cunha paper on disaggreg
 * seed=42 added for reproducibility (paper's code has no seed)
 * Statistical: SBC at weekly granularity. AutoETS(season_length=52) captures the annual seasonal cycle.
 
+* 
+# Statistical models - AutoETS for Smooth category and SBA for non-smooth
+* Zero presence in series is used to classify series into smooth and non-smooth - Series with zero zero period => smooth, series with >=1 zero period => non-smooth
+* Smooth is modelled using AutoETS which automatically determines best model using AICc (seaosnl vs non-seasonal)
+* non-smooth is modelled using SBA (crostonSBA)
+* To prevent degenerate ets model fiiting: if training series length < minimum seasonal length for ETS (weekly = 52), then fallback to training mean (min_obs_ets=52). An additional crash guard is also in place to prevent the code from breaking(min_obs = 2)
+
 # Prerequisites:
 Run the paper's Articles 1–5  from the paper's repository (CodeOcean capsule 3786508) to generate the following files:
 * calculated_features/lagged_features_2.csv
