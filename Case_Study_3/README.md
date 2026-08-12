@@ -30,9 +30,7 @@ previous lag_{k-1}, and the rolling statistics are recomputed from the updated
 lag vector. Global model across all series, versus the paper's per store design
 (54 models). seed=655321.
 
-* **Statistical:** ADI-based classification on DAILY training data :
-AutoETS(season_length=1) for smooth demand (ADI<1.32), SBA for
-non-smooth (ADI>=1.32)
+* **Statistical:** zero presence based classification on monthly training data : AutoETS (automatic model selection(seasonal and non-seasonal) based on least AICc per series) for smooth demand (no zero period), SBA for non-smooth (>=1 zero period) and fall back is mean forecast if min_obs criteria is not satisfied to prevent degenrate ets model fitting (if training series length < minimum seasonal length for ETS (monthly = 12), then fallback to training mean). An additional crash guard is also in place to prevent the code from breaking(min_obs = 2)
 
 * **Prerequisites:** Kaggle Corporación Favorita files in 'DATA_DIR':
 train.csv, stores.csv, items.csv, holidays_events.csv, oil.csv, transactions.csv
